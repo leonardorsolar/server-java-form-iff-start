@@ -70,3 +70,30 @@ mvc-project/
 O projeto estará disponível em http://localhost:8080.
 
 Com essa estrutura e dependências, você tem uma base para criar uma aplicação web usando o padrão MVC com Spring Boot.
+
+9. Usando uma Página HTML Estática
+
+Se você quer exibir uma página HTML simples sem controladores ou lógica Java, basta colocar o arquivo HTML dentro da pasta src/main/resources/static/. O Spring Boot serve automaticamente os recursos estáticos dessa pasta.
+Passos:
+
+    Crie a pasta static em src/main/resources/ se ela ainda não existir.
+
+    Coloque um arquivo HTML lá, por exemplo, index.html:
+        Caminho: src/main/resources/static/index.html
+
+html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página Estática</title>
+</head>
+<body>
+    <h1>Bem-vindo a uma Página Estática!</h1>
+    <p>Esta página está sendo servida diretamente da pasta <code>static</code>.</p>
+</body>
+</html>
+
+    Execute sua aplicação Spring Boot.
+
+Agora, você pode acessar essa página diretamente no navegador em http://localhost:8080/index.html sem a necessidade de criar controladores.
