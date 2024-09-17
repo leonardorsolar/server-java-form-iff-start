@@ -86,6 +86,7 @@ html
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Página Estática</title>
 </head>
 <body>
